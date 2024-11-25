@@ -1,0 +1,17 @@
+import java.util.Random;
+
+public class Würfel {
+
+	public static void main(String[] args) {
+		Random coolNumber = new Random();
+		int a = coolNumber.nextInt(6)+1;
+		
+		Random coolNumbers = new Random();
+		int b = coolNumbers.nextInt(6)+1;
+		
+		System.out.println("Du hast "+a+" | "+b+" geworfen!");
+		
+		
+	}
+
+}
