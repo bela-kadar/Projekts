@@ -1,0 +1,33 @@
+import java.util.Scanner;
+
+public class Array2D {
+
+	public static void main(String[] args) {
+
+		Scanner scan = new Scanner(System.in);
+
+		System.out.println("Hi, i'm Java, and you are?");
+		String question1 = scan.nextLine();
+
+		System.out.println("Hi " + question1 + " nice to meet you." + "\nWhere are you from?");
+		String question2 = scan.nextLine();
+
+		System.out.println("Nice, i heard about " + question2 + " but I haven't visited it so far.");
+		String question3 = scan.nextLine();
+
+		System.out.println("Because i know you for a while, " + "i'm glad that you are intrested about \"me\","
+				+ " \nHow it goes with the learning  process?");
+		String question4 = scan.nextLine();
+
+		System.out.println(
+				"I'm glad to hear that, i know that not so " + "simple its, \nbut between \"me\" and another language,"
+						+ " i choose of course: \"my self\"." + " Do you think the same?!");
+		String question5 = scan.nextLine();
+
+		System.out.println("I'm glad to know that I'm still wanted, "
+				+ "I hope to meet you again in my \"world\" soon. bye bye !!");
+		String question6 = scan.nextLine();
+		
+		scan.close();
+	}
+}
