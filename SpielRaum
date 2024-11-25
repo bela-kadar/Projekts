@@ -1,0 +1,117 @@
+public class Test {
+
+	public static void main(String[] args) {
+		max2(13, 5);
+		max3(53, 30, 40);
+		max4(53, 40, 10, 50);
+		max5(1, 12, 5, 2, 110);
+		max2(2.2, 13.1);
+		max3(.4, 1.3, .2);
+		max4(2.3, 0.4, 0.6, 0.7);
+		max5(10, 20.2, 0.9, 8.0, 7.0);
+	}
+
+	public static void max2(int a, int b) {
+		int maxRueck;
+
+		if (a >= b)
+			maxRueck = a;
+		else
+			maxRueck = b;
+		System.out.println("Das Maximum der 2 int-Zahlen ist: " + maxRueck);
+	}
+
+	public static void max3(int a, int b, int c) {
+		int maxRueck;
+
+		if (a >= b && a >= c)
+			maxRueck = a;
+		else if (b >= a && b >= c)
+			maxRueck = b;
+		else
+			maxRueck = c;
+		System.out.println("Das Maximum der 3 int-Zahlen ist: " + maxRueck);
+	}
+
+	public static void max4(int a, int b, int c, int d) {
+		int maxRueck;
+
+		if (a >= b && a >= c && a >= d)
+			maxRueck = a;
+		else if (b >= a && b >= c && b >= d)
+			maxRueck = b;
+		else if (c >= a && c >= b && c >= d)
+			maxRueck = c;
+		else
+			maxRueck = d;
+		System.out.println("Das Maximum der 4 int-Zahle ist: " + maxRueck);
+	}
+
+	public static void max5(int a, int b, int c, int d, int e) {
+		int maxRueck;
+
+		if (a >= b && a >= c && a >= d && a >= e)
+			maxRueck = a;
+		else if (b >= a && b >= c && b >= d && b >= e)
+			maxRueck = b;
+		else if (c >= a && c >= b && c >= d && c >= e)
+			maxRueck = c;
+		else if (d >= a && d >= b && d >= c && d >= e)
+			maxRueck = d;
+		else
+			maxRueck = e;
+		System.out.println("Das Maximum der 5 int-Zahlen ist: " + maxRueck);
+	}
+
+	public static void max2(double a, double b) {
+		double maxRueck;
+
+		if (a >= b)
+			maxRueck = a;
+		else
+			maxRueck = b;
+		System.out.println("Das Maximum der 2 double-Zahlen ist: " + maxRueck);
+	}
+
+	public static void max3(double a, double b, double c) {
+		double maxRueck;
+
+		if (a >= b && a >= c)
+			maxRueck = a;
+		else if (b >= a && b >= c)
+			maxRueck = b;
+		else
+			maxRueck = c;
+		System.out.println("Das Maximum der 3 double-Zahlen ist: " + maxRueck);
+	}
+
+	public static void max4(double a, double b, double c, double d) {
+		double maxRueck;
+
+		if (a >= b && a >= c && a >= d)
+			maxRueck = a;
+		else if (b >= a && b >= c && b >= d)
+			maxRueck = b;
+		else if (c >= a && c >= b && c >= d)
+			maxRueck = c;
+		else
+			maxRueck = d;
+		System.out.println("Das Maaximum der 4 double-Zahlen ist: " + maxRueck);
+	}
+
+	public static void max5(double a, double b, double c, double d, double e) {
+		double maxRueck;
+
+		if (a >= b && a >= c && a >= d && a >= e)
+			maxRueck = a;
+		else if (b >= a && b >= c && b >= d && b >= e)
+			maxRueck = b;
+		else if (c >= a && c >= b && c >= d && c >= e)
+			maxRueck = c;
+		else if (d >= a && d >= b && d >= c && d >= e)
+			maxRueck = d;
+		else
+			maxRueck = e;
+		System.out.println("Das Maximum der 5 double-Zahlen ist: " + maxRueck);
+	}
+}
