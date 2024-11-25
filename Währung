@@ -1,0 +1,36 @@
+package klass_raum;
+
+import java.util.Scanner;	
+																				
+public class Hai_lasa {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner scanner = new Scanner(System.in);
+		System.out.println("Bitte geben Sie einen Betrag in € an:");
+		Double money = scanner.nextDouble();
+		convertToDllars(money);
+		convertToCHF(money);
+		convertToGBP(money);
+		covertToRon(money);
+		scanner.close();
+	}
+	
+	public static void convertToDllars(Double eur) {
+		System.out.println("Der Betrag in $ ist :" + eur * 1.12);
+		
+	}
+		
+	public static void covertToRon(Double eur) {
+		System.out.println("Der Betrag in Ron ist :" + eur * 4.95 );
+	}
+	
+	public static  void convertToCHF(Double eur) {
+		System.out.println("Der Betrag in CHF ist:" +eur * 0.95);
+	}
+	
+	public static void convertToGBP(Double eur) {
+		System.out.println("Der Betrag in £ ist: " + eur * 0.84);
+	}
+	
+}
